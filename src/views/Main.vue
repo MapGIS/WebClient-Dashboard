@@ -5,7 +5,9 @@
       <SubHeader />
       <Center />
     </template>
-    <template slot="footer"> </template>
+    <template slot="footer">
+      <Footer />
+    </template>
   </mapgis-ui-layout-pro>
 </template>
 
@@ -13,10 +15,11 @@
 import Header from "./Header.vue";
 import SubHeader from "./SubHeader.vue";
 import Center from "./Center.vue";
+import Footer from "./Footer.vue";
 
 export default {
   name: "Home",
-  components: { Header, SubHeader, Center },
+  components: { Header, SubHeader, Center, Footer },
 };
 </script>
 <style lang="scss">
@@ -29,6 +32,6 @@ export default {
 }
 .mapgis-ui-layout-footer {
   height: 24px !important;
-  padding: 0px 50px !important;
+  padding: 0px 0px !important;
 }
 </style>

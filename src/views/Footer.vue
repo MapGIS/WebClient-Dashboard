@@ -1,26 +1,40 @@
 <template>
-  <mapgis-ui-borderbox12>
-    <mapgis-ui-decoration8 class="left-decoration"> </mapgis-ui-decoration8>
-    <mapgis-ui-decoration5 class="top-decoration"> </mapgis-ui-decoration5>
-    <mapgis-ui-decoration8 class="right-decoration"> </mapgis-ui-decoration8>
-  </mapgis-ui-borderbox12>
+  <div class="dashboard-footer-warpper" @click="changeShow">
+    <mapgis-ui-borderbox13 :class="{ 'dashboard-footer': true, show: show }">
+      <!-- 表格，敬请期待!!! -->
+    </mapgis-ui-borderbox13>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "dashboard-header",
-  data() {},
-  methods: {},
+  name: "dashboard-footer",
+  data() {
+    return {
+      show: false,
+    };
+  },
+  methods: {
+    changeShow() {
+      this.show = !this.show;
+    },
+  },
 };
 </script>
 
 <style lang="scss">
-.left-decoration {
-  width: 25vw;
-  height: 50px;
-}
-.right-decoration {
-  width: 25vw;
-  height: 50px;
+.dashboard-footer-warpper {
+  height: 23px;
+  width: 100vw;
+  overflow: hidden;
+  .dashboard-footer {
+    width: 100vw;
+    height: 400px;
+    z-index: 9999;
+  }
+  .show {
+    position: absolute;
+    top: calc(100vh - 8px - 400px);
+  }
 }
 </style>

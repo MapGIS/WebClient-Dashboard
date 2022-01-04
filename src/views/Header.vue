@@ -41,7 +41,7 @@ export default {
 
   .left-sub-decoration {
     position: absolute;
-    top: 20px;
+    top: 0px;
     left: 15vw;
     width: 10vw;
     height: 30px;

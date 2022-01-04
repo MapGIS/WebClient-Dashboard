@@ -1,0 +1,44 @@
+[
+  {
+    "title": "国土空间规划",
+    "tooltip": "国土空间规划",
+    "children": [
+      {
+        "title": "总体规划",
+        "tooltip": "总体规划",
+        "children": [
+          {
+            "title": "多规合一",
+            "tooltip": "多规合一",
+            "url": "http://192.168.82.89:6163/igs/rest/mrms/vtiles/styles/国土空间规划总体规划多规合一_style.json"
+          },
+          {
+            "title": "规划地类",
+            "tooltip": "规划地类",
+            "url": "http://192.168.82.89:6163/igs/rest/mrms/vtiles/styles/国土空间规划总体规划规划地类_style.json"
+          },
+          {
+            "title": "建设用地",
+            "tooltip": "建设用地",
+            "url": "http://192.168.82.89:6163/igs/rest/mrms/vtiles/styles/国土空间规划总体规划建设用地管制分区规划_stylejson"
+          },
+          {
+            "title": "生态保护红线",
+            "tooltip": "生态红线",
+            "url": "http://192.168.82.89:6163/igs/rest/mrms/vtiles/styles/国土空间规划总体规划生态保护红线规划_style.json"
+          },
+          {
+            "title": "土地利用规划",
+            "tooltip": "利用规划",
+            "url": "http://192.168.82.89:6163/igs/rest/mrms/vtiles/styles/国土空间规划总体规划土地利用规划_style.json"
+          },
+          {
+            "title": "土地整治规划",
+            "tooltip": "整治规划",
+            "url": "http://192.168.82.89:6163/igs/rest/mrms/vtiles/styles/国土空间规划总体规划土地整治规划_style.json"
+          }
+        ]
+      }
+    ]
+  }
+]
